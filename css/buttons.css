@@ -1,0 +1,87 @@
+/* buttons.css */
+
+.theme-toggle {
+    display: none;
+}
+
+.nav-links .theme-toggle {
+    display: flex;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+    transition: var(--transition);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-links .theme-toggle:hover {
+    background: var(--card-background);
+}
+
+.download-btn {
+    background: var(--primary-color);
+    color: white !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.primary-btn {
+    background: var(--primary-color);
+    color: white;
+}
+
+.secondary-btn {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+.secondary-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.cta-buttons .primary-btn.desktop-only {
+    display: inline-flex;
+}
+
+.cta-buttons .primary-btn.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .cta-buttons .primary-btn.desktop-only {
+        display: none !important;
+    }
+    
+    .cta-buttons .primary-btn.mobile-only {
+        display: inline-flex !important;
+    }
+}

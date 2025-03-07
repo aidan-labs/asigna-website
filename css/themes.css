@@ -1,0 +1,15 @@
+/* themes.css */
+
+.dark-theme {
+    --primary-color: #0A84FF;
+    --secondary-color: #5E5CE6;
+    --background: #000000;
+    --text-primary: #FFFFFF;
+    --text-secondary: #98989D;
+    --card-background: #1C1C1E;
+    --card-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    --navbar-background: rgba(28,28,30,0.8);
+    --border-color: #38383A;
+    --input-background: #1C1C1E;
+    --input-border: #38383A;
+}

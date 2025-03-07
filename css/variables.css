@@ -1,0 +1,21 @@
+/* variables.css */
+
+:root {
+    --primary-color: #007AFF;
+    --secondary-color: #5856D6;
+    --background: #F2F2F7;
+    --text-primary: #000000;
+    --text-secondary: #6E6E73;
+    --card-background: #FFFFFF;
+    --card-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    --navbar-background: rgba(255,255,255,0.8);
+    --error-color: #FF3B30;
+    --success-color: #34C759;
+    --warning-color: #FF9500;
+    --info-color: #5856D6;
+    --border-color: #E5E5EA;
+    --input-background: #FFFFFF;
+    --input-border: #C7C7CC;
+    --input-focus: #007AFF;
+    --transition: all 0.3s ease;
+}

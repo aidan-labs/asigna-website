@@ -1,0 +1,8 @@
+/* footer.css */
+
+footer {
+    background: var(--card-background);
+    padding: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+}
