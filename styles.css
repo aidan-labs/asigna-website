@@ -79,11 +79,14 @@
 }
 
 html {
+    height: -webkit-fill-available;
     scroll-behavior: smooth;
     scroll-padding-top: var(--header-height);
 }
 
 body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     font-family: var(--font-family);
     background-color: var(--bg-primary);
     color: var(--text-primary);
@@ -135,11 +138,14 @@ button {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
+    max-height: -webkit-fill-available;
     z-index: var(--z-sidebar);
     display: flex;
     flex-direction: column;
     transition: transform var(--transition-medium);
+    overflow-y: auto;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 .main-content {
@@ -232,6 +238,10 @@ button {
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid var(--card-border);
+    position: sticky;
+    bottom: 0;
+    background-color: var(--bg-secondary);
+    z-index: 1;
 }
 
 .sidebar-footer a {
