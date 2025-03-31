@@ -304,34 +304,21 @@ function initVideoPlayer() {
             videoOverlay.style.opacity = '1';
         }
     });
-    
+
     video.addEventListener('play', function() {
         videoOverlay.style.opacity = '0';
     });
-    
+
     video.addEventListener('pause', function() {
-        videoOverlay.style.opacity = '1';
+        if (!document.fullscreenElement) {
+            videoOverlay.style.opacity = '1';
+        }
     });
-    
-    // Hide overlay when video is playing
-    video.addEventListener('playing', function() {
-        videoOverlay.style.opacity = '0';
-    });
-    
-    // Show overlay when video ends
+
     video.addEventListener('ended', function() {
         videoOverlay.style.opacity = '1';
         video.currentTime = 0;
     });
-    
-    // Handle click on video
-    video.addEventListener('click', function() {
-        if (video.paused) {
-            video.play();
-            videoOverlay.style.opacity = '0';
-        } else {
-            video.pause();
-            videoOverlay.style.opacity = '1';
-        }
-    });
+
+    videoOverlay.style.pointerEvents = "none";
 }
